@@ -8,9 +8,9 @@ import '../components/Icon'
 function Contact() {
   return (
     <>
+    
     <div className='container grid grid-cols-3 place-items-center mt-12'>
       <Form/>
-
 
       <ul className='grid grid-cols-2 m-2 text-yellow-50'>
         <h2 className='col-span-2 text-center text-[#F1CAA3] font-bold text-xl'>Nuestras Redes:</h2>
@@ -32,6 +32,7 @@ function Contact() {
             <a rel="noopener noreferrer" href=" https://wa.me/numerodecel" target="_blank">  WhatsApp</a>
           </li>
         </ul>
+
       <Ubicacion/>
     </div>
     </>
