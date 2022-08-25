@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <>
-        <footer className='container flex flex-row justify-start footer absolute bottom-0 '>
+        <footer className='container flex flex-row justify-start footer absolute bottom-0'>
             <ul className='flex self-center m-2 text-yellow-50'>
                 <li className=' p-1 m-1 text  shadow-orange-500 shadow-md rounded-xl  hover:bg-stone-700  hover:shadow-md hover:shadow-orange-300 hover:text-orange-400 '> 
                     <FontAwesomeIcon icon="fa-brands fa-instagram" />

@@ -9,7 +9,7 @@ function Contact() {
   return (
     <>
     
-    <div className='container grid grid-cols-3 place-items-center mt-12'>
+    <div className='container grid grid-cols-1 md:grid-cols-3 place-items-center mt-12'>
       <Form/>
 
       <ul className='grid grid-cols-2 m-2 text-yellow-50'>
@@ -32,8 +32,9 @@ function Contact() {
             <a rel="noopener noreferrer" href=" https://wa.me/numerodecel" target="_blank">  WhatsApp</a>
           </li>
         </ul>
-
-      <Ubicacion/>
+        <div className='col-span-2 mb-4'>
+          <Ubicacion/>
+        </div>
     </div>
     </>
   )

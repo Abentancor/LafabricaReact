@@ -5,7 +5,7 @@ import './Icon'
 function FooterDos() {
   return (
     <>
-        <footer className='container grid grid-cols-4 place-items-center footer absolute bottom-0 text-[#F1CAA3] border-t-2 border-black'>
+        <footer className='container grid grid-cols-2  place-items-start footer md:absolute bottom-0  text-[#F1CAA3] border-t-2 border-black md:grid-cols-4 md:place-items-center'>
             <div className='p-2 ml-2'>
                 <h4  className=' font-bold'>Dirección:</h4>
                 <h6  className='text-xs'>Urquiza 2233</h6>

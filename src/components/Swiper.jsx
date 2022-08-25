@@ -21,7 +21,7 @@ export default () => {
     }}
     autoplay={{delay:5000 }}
     rewind={true}
-    className={`flex justify-between flex-colflex-row m`}    
+    className={`flex justify-between flex-colflex-row my-12`}    
     >
       <SwiperSlide>
       <SliderCard
