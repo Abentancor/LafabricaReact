@@ -21,11 +21,11 @@ export default () => {
     }}
     autoplay={{delay:5000 }}
     rewind={true}
-    className={`flex justify-between flex-colflex-row my-12`}    
+    className={`flex justify-between flex-row mt-12 mb-12`}    
     >
       <SwiperSlide>
       <SliderCard
-        imagen='\src\assets\90642370_509369909747469_1393391283732940476_n.jpg'
+        imagen='src/assets/90642370_509369909747469_1393391283732940476_n.jpg'
         alt='La Fábrica'
         descripcion='Diseñamos y fabricamos todo tipo de muebles y objetos.
         Cocinas, Baños, placares, vestidores, locales comerciales y mucho mas!!'
@@ -50,7 +50,7 @@ export default () => {
         <SliderCard
           imagen={'https://loremflickr.com/g/320/240/curtains'}
           alt='imagen'
-          descripcion='instalación cortinas rolller.'
+          descripcion='instalación cortinas roller.'
         />
       </SwiperSlide>
       <SwiperSlide>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Form from '../components/Form'
 import Ubicacion from '../components/Ubicacion'
+import { motion } from "framer-motion"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '../components/Icon'
@@ -12,7 +13,10 @@ function Contact() {
     <div className='container grid grid-cols-1 md:grid-cols-3 place-items-center mt-12'>
       <Form/>
 
-      <ul className='grid grid-cols-2 m-2 text-yellow-50'>
+      <motion.ul
+              initial={{ opacity: 0 , scale:0,}}
+              animate={{ opacity: 1 , scale:1,}}
+              transition={{ duration: 2, delay:0.5 }}  className='grid grid-cols-2 m-2 text-yellow-50'>
         <h2 className='col-span-2 text-center text-[#F1CAA3] font-bold text-xl'>Nuestras Redes:</h2>
           <li className=' p-1 m-2 mr-4 text  shadow-orange-500 shadow-md rounded-xl  hover:bg-stone-700  hover:shadow-md hover:shadow-orange-300 hover:text-orange-400 '> 
             <FontAwesomeIcon icon="fa-brands fa-instagram" />
@@ -31,10 +35,10 @@ function Contact() {
             <FontAwesomeIcon icon="fa-brands fa-whatsapp" />
             <a rel="noopener noreferrer" href=" https://wa.me/numerodecel" target="_blank">  WhatsApp</a>
           </li>
-        </ul>
         <div className='col-span-2 mb-4'>
           <Ubicacion/>
         </div>
+        </motion.ul>
     </div>
     </>
   )

@@ -1,11 +1,16 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './Icon'
+import { motion } from "framer-motion"
 
 function FooterDos() {
   return (
     <>
-        <footer className='container grid grid-cols-2  place-items-start footer md:absolute bottom-0  text-[#F1CAA3] border-t-2 border-black md:grid-cols-4 md:place-items-center'>
+        <motion.footer 
+            initial={{ opacity: 0, scale: 0.5 ,y:50}}
+            animate={{ opacity: 1, scale: 1 ,y:0}}
+            transition={{ duration: 1, delay:1.2 }}
+        className='container grid grid-cols-2 mt-12 place-items-start footer md:relative bottom-0  text-[#F1CAA3] border-t-2 border-black md:grid-cols-4 md:place-items-center'>
             <div className='p-2 ml-2'>
                 <h4  className=' font-bold'>Dirección:</h4>
                 <h6  className='text-xs'>Urquiza 2233</h6>
@@ -16,8 +21,10 @@ function FooterDos() {
             </div>
             <div className='p-2 ml-2'>
                 <h4  className=' font-bold'>Teléfono:</h4>
-                <a  className='text-xs' href="tel:123-456-7890p123">tel: 123-456-7890p123</a> <br/>
-                <a  className='text-xs' href="tel:123-456-7890p123">tel: 123-456-7890p123</a>
+                <FontAwesomeIcon className='w-3' icon="fa-solid fa-phone" />
+                <a  className='text-xs' href="tel:123-456-7890p123">: 123-456-7890p123</a> <br/>
+                <FontAwesomeIcon className='w-3' icon="fa-solid fa-phone" />
+                <a  className='text-xs' href="tel:123-456-7890p123">: 123-456-7890p123</a>
             </div>
             <div className='p-2 ml-2'>
                 <h4  className=' font-bold'>Nuestras redes:</h4>
@@ -30,7 +37,7 @@ function FooterDos() {
                     </li>
                 </ul>
             </div>
-        </footer>
+        </motion.footer>
     </>
   )
 }
